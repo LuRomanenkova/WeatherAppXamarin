@@ -1,0 +1,13 @@
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\bin\Debug\netstandard2.0\Weather.deps.json
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\bin\Debug\netstandard2.0\Weather.dll
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\Weather.csprojAssemblyReference.cache
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\Weather.AssemblyInfoInputs.cache
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\Weather.AssemblyInfo.cs
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\bin\Debug\netstandard2.0\ref\Weather.dll
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\bin\Debug\netstandard2.0\Weather.pdb
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\Weather.dll
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\ref\Weather.dll
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\Weather.pdb
