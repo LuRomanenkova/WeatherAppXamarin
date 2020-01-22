@@ -11,3 +11,5 @@ C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netst
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\Weather.dll
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\ref\Weather.dll
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\Weather.pdb
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\ContextPage.xaml.g.cs
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\MasterPage.xaml.g.cs

@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Weather.MainPage.xaml", "MainPage.xaml", typeof(global::Weather.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Weather.ContextPage.xaml", "ContextPage.xaml", typeof(global::Weather.ContextPage))]
 
 namespace Weather {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("MainPage.xaml")]
-    public partial class MainPage : global::Xamarin.Forms.MasterDetailPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ContextPage.xaml")]
+    public partial class ContextPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Weather.MasterPage masterPage;
+        private global::Xamarin.Forms.Entry _cityEntry;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            masterPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Weather.MasterPage>(this, "masterPage");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ContextPage));
+            _cityEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "_cityEntry");
         }
     }
 }

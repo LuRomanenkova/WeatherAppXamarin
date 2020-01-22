@@ -5,33 +5,30 @@ namespace Weather
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
-    public partial class MainPage : ContentPage
+    public partial class MainPage : MasterDetailPage
     {
-        RestService _restService;
 
         public MainPage()
         {
             InitializeComponent();
-            _restService = new RestService();
-        }
 
-        async void OnGetWeatherButtonClicked(object sender, EventArgs e)
-        {
-            
-            if (!string.IsNullOrWhiteSpace(_cityEntry.Text))
+            masterPage.listView.ItemSelected += OnItemSelected;
+
+            if (Device.RuntimePlatform == Device.UWP)
             {
-                WeatherData weatherData = await _restService.GetWeatherData(GenerateRequestUri(Constants.OpenWeatherMapEndpoint));
-                BindingContext = weatherData;
+                MasterBehavior = MasterBehavior.Popover;
             }
         }
 
-        string GenerateRequestUri(string endpoint)
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            string requestUri = endpoint;
-            requestUri += $"?q={_cityEntry.Text}";
-            requestUri += "&units=imperial"; // or units=metric
-            requestUri += $"&APPID={Constants.OpenWeatherMapAPIKey}";
-            return requestUri;
+            var item = e.SelectedItem as MasterPageItem;
+            if (item != null)
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.listView.SelectedItem = null;
+                IsPresented = false;
+            }
         }
     }
 }

@@ -37,6 +37,9 @@ namespace Weather
         [JsonProperty("sys")]
         public Sys Sys { get; set; }
 
+        //[JsonProperty("timezone")]
+        //public long Timezone { get; set; }
+
         [JsonProperty("id")]
         public long Id { get; set; }
 
