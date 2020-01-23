@@ -1,38 +1,37 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+
 
 namespace Weather
 {
     public class RestService
     {
-        HttpClient _client;
-
-        public RestService()
+        public static async Task<ApiResponse> Get(string url, string authId = null)
         {
-            _client = new HttpClient();
-        }
-
-        public async Task<WeatherData> GetWeatherData(string query)
-        {
-            WeatherData weatherData = null;
-            try
+            using (var client = new HttpClient())
             {
-                var response = await _client.GetAsync(query);
-                if (response.IsSuccessStatusCode)
+                if (!string.IsNullOrWhiteSpace(authId))
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Authorization", authId);
+
+                var request = await client.GetAsync(url);
+                if (request.IsSuccessStatusCode)
                 {
-                    var content = await response.Content.ReadAsStringAsync();
-                    weatherData = JsonConvert.DeserializeObject<WeatherData>(content);
+                    return new ApiResponse { Response = await request.Content.ReadAsStringAsync() };
                 }
+                else
+                    return new ApiResponse { ErrorMessage = request.ReasonPhrase };
             }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("\t\tERROR {0}", ex.Message);
-            }
-
-            return weatherData;
         }
+    }
+
+    public class ApiResponse
+    {
+        public bool Successful => ErrorMessage == null;
+        public string ErrorMessage { get; set; }
+        public string Response { get; set; }
     }
 }

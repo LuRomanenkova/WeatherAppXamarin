@@ -12,7 +12,8 @@
         <ListView x:Name="listView" x:FieldModifier="public">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:MasterPageItem}">
-                    <local:MasterPageItem Title="Select City" IconSource="contacts.png" TargetType="{x:Type local:ContextPage}" />
+                    <local:MasterPageItem Title="Выбор города" IconSource="contacts.png" TargetType="{x:Type local:AddCityPage}" />
+                    <local:MasterPageItem Title="Погода" IconSource="contacts.png" TargetType="{x:Type local:ContextPage}" />
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
@@ -28,7 +29,7 @@
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
-            </ListView.ItemTemplate>
+            </ListView.ItemTemplate>       
         </ListView>
     </StackLayout>
 </ContentPage>
