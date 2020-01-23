@@ -1,11 +1,15 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static Weather.WeatherData;
 
 namespace Weather
 {
@@ -13,12 +17,59 @@ namespace Weather
     public partial class AddCityPage : ContentPage
     {
         public static string SelectedCity = "Moscow";
+        public List<Spetial_city> cities = new List<Spetial_city>();
 
-        RestService _restService;
         public AddCityPage()
         {
             InitializeComponent();
-            _restService = new RestService();
+         
+
+            string jsonFileName = "cityData.json";
+            try
+            {
+                var assembly = typeof(AddCityPage).GetTypeInfo().Assembly;
+                foreach (var res in assembly.GetManifestResourceNames())
+                {
+                    if (res.Contains(jsonFileName))
+                    {
+                        Stream stream = assembly.GetManifestResourceStream(res);
+
+                        using (var reader = new StreamReader(stream))
+                        {
+                            string json = reader.ReadToEnd();
+                            cities = JsonConvert.DeserializeObject<List<Spetial_city>>(json);
+                        }
+                    }
+                }
+
+                int index = 0;
+
+                List<Spetial_city> tmp = new List<Spetial_city>(0);
+
+                foreach (var city in cities)
+                {
+                    tmp.Add(city);
+                    index++;
+                    if (index == 10)
+                    {
+                        break;
+                    }
+                }
+
+                cityList.ItemsSource = tmp;
+            }
+            catch
+            {
+                cityList.ItemsSource = new List<Spetial_city>
+                {
+                    new Spetial_city
+                    {
+                        name = "New York",
+                        country = "USA"
+                    }
+                };
+            }
+
         }
 
          void OnGetWeatherButtonClicked(object sender, EventArgs e)
@@ -35,13 +86,26 @@ namespace Weather
             }
         }
 
-        string GenerateRequestUri(string endpoint)
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string requestUri = endpoint;
-            requestUri += $"?lang=ru&q={_cityEntry.Text}";
-            requestUri += "&units=metric"; // or units=metric, units=imperial
-            requestUri += $"&APPID={Constants.OpenWeatherMapAPIKey}";
-            return requestUri;
+            if (string.IsNullOrEmpty(e.NewTextValue))
+            {
+                cityList.ItemsSource = cities;
+            }
+
+            else
+            {
+                cityList.ItemsSource = cities.Where(x => x.name.StartsWith(e.NewTextValue));
+            }
+
+        }
+
+        private void cityList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                SelectedCity = e.SelectedItem.ToString();
+            }    
         }
     }
 }

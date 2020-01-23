@@ -27,6 +27,14 @@ namespace Weather
             public int sunset { get; set; }
         }
 
+        public class Spetial_city 
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+            public string country { get; set; }
+            public Coord coord { get; set; }
+        }
+
         public class List
         {
             public int dt { get; set; }
