@@ -16,7 +16,7 @@ namespace Weather
             using (var client = new HttpClient())
             {
                 if (!string.IsNullOrWhiteSpace(authId))
-                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Authorization", authId);
+                    client.DefaultRequestHeaders.Add("Authorization", authId);
 
                 var request = await client.GetAsync(url);
                 if (request.IsSuccessStatusCode)

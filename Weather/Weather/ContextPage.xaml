@@ -19,7 +19,7 @@
             </Grid.RowDefinitions>
             <BoxView Grid.RowSpan="2" BackgroundColor="#7585BA" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Image x:Name="bgImg" Aspect="AspectFill" Grid.RowSpan="2" Source="bg.png" Opacity="0.5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-            <Image Aspect="AspectFill" Grid.RowSpan="2" Source="overlay.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            
             <ImageButton  Margin="5" WidthRequest="23" HeightRequest="10" HorizontalOptions="Start" VerticalOptions="Center"  />
             <Grid Grid.Row="1">
                 <StackLayout Spacing="10">
