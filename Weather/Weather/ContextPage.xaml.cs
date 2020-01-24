@@ -21,21 +21,40 @@ namespace Weather
         public ContextPage()
         {
             InitializeComponent();
-            if (StaticVariables.SelectedCity != "")
+
+            if (CheckInternetConnection())
             {
-                Location = StaticVariables.SelectedCity;
-                GetWeatherInfo();
+                if (StaticVariables.SelectedCity != "")
+                {
+                    Location = StaticVariables.SelectedCity;
+
+                    GetWeatherInfo();
+                }
+                else
+                {
+                    GetCoordinates();
+                }
             }
-            else
-            {
-                GetCoordinates();
-            }
-            
         }
 
        
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+
+        private bool CheckInternetConnection()
+        {
+            var current = Connectivity.NetworkAccess;
+
+            bool res = true;
+
+            if (current != NetworkAccess.Internet)
+            {
+                DisplayAlert("Internet connection", "Internet connection is faild", "Ok");
+                res = false;
+            }
+
+            return res;
+        }
 
         private async void GetCoordinates()
         {
@@ -55,15 +74,16 @@ namespace Weather
                 }
                 else
                 {
-                    Location = StaticVariables.SelectedCity; 
+                    Location = StaticVariables.SelectedCity;
 
                     GetWeatherInfo();
                 }
             }
-            catch( Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.StackTrace);
             }
+ 
         }
 
         private async Task<string> GetCity(Location location)
