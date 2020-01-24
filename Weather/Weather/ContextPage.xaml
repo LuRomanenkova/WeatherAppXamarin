@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="using:Weather"
              x:Class="Weather.ContextPage"
-			 Title="Context Page">
+			 Title="Погода">
     
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0">
         <Grid.RowDefinitions>

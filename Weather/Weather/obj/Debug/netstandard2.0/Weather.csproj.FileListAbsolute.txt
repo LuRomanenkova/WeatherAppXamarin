@@ -14,3 +14,4 @@ C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netst
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\ContextPage.xaml.g.cs
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\MasterPage.xaml.g.cs
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\AddCityPage.xaml.g.cs
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather\obj\Debug\netstandard2.0\HistoryPage.xaml.g.cs

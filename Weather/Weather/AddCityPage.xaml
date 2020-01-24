@@ -6,27 +6,6 @@
              mc:Ignorable="d"
              xmlns:local="clr-namespace:Weather;assembly=Weather"
              x:Class="Weather.AddCityPage">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style x:Key="labelStyle" 
-                   TargetType="Label">
-                <Setter Property="FontSize" 
-                        Value="Small" />
-                <Setter Property="TextColor" 
-                        Value="Gray" />
-            </Style>
-
-            <Style x:Key="labelResultStyle" 
-                   TargetType="Label">
-                <Setter Property="FontSize" 
-                        Value="Medium" />
-                <Setter Property="Margin" 
-                        Value="10,0,0,0" />
-            </Style>
-            <local:LongToDateTimeConverter x:Key="longToDateTimeConverter" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <StackLayout>
         <SearchBar TextChanged="SearchBar_TextChanged"></SearchBar>
         <ListView x:Name="cityList"

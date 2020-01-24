@@ -13,6 +13,7 @@
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:MasterPageItem}">
                     <local:MasterPageItem Title="Выбор города" IconSource="contacts.png" TargetType="{x:Type local:AddCityPage}" />
+                    <local:MasterPageItem Title="История" IconSource="contacts.png" TargetType="{x:Type local:HistoryPage}" />
                     <local:MasterPageItem Title="Погода" IconSource="contacts.png" TargetType="{x:Type local:ContextPage}" />
                 </x:Array>
             </ListView.ItemsSource>

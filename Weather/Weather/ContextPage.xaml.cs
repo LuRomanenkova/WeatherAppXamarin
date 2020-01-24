@@ -19,10 +19,10 @@ namespace Weather
         public ContextPage()
         {
             InitializeComponent();
-            if (AddCityPage.SelectedCity != "")
+            if (StaticVariables.SelectedCity != "")
             {
-                  Location = AddCityPage.SelectedCity;
-                    GetWeatherInfo();
+                Location = StaticVariables.SelectedCity;
+                GetWeatherInfo();
             }
             else
             {
@@ -53,7 +53,7 @@ namespace Weather
                 }
                 else
                 {
-                    Location = AddCityPage.SelectedCity; ;
+                    Location = StaticVariables.SelectedCity; 
 
                     GetWeatherInfo();
                 }

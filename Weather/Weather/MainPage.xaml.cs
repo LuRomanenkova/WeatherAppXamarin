@@ -14,25 +14,40 @@ namespace Weather
     // by visiting https://aka.ms/xamarinforms-previewer
     public static class ParallelActions
     {
-        public static List<Spetial_city> cities = new List<Spetial_city>();
-
+       
         public static async Task AddCitiesData()
         {
-            string jsonFileName = "cityData.json";
-            
-            if (cities.Count == 0)
+            if (StaticVariables.cities.Count == 0)
             {
                 var assembly = typeof(AddCityPage).GetTypeInfo().Assembly;
                 foreach (var res in assembly.GetManifestResourceNames())
                 {
-                    if (res.Contains(jsonFileName))
+                    if (res.Contains(StaticVariables.jsonFileName))
                     {
                         Stream stream = assembly.GetManifestResourceStream(res);
 
                         using (var reader = new StreamReader(stream))
                         {
                             string json = reader.ReadToEnd();
-                            cities = JsonConvert.DeserializeObject<List<Spetial_city>>(json);
+                            StaticVariables.cities = JsonConvert.DeserializeObject<List<Spetial_city>>(json);
+                        }
+                    }
+                }
+                var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                var filename = Path.Combine(path, StaticVariables.jsonHistoryStore);
+
+                if (!File.Exists(filename))
+                {
+                    File.CreateText(filename);
+                }
+                else
+                {
+                    using (var reader = new StreamReader(filename))
+                    {
+                        string json = reader.ReadToEnd();
+                        if (json != "")
+                        {
+                            StaticVariables.historyList = JsonConvert.DeserializeObject<List<Spetial_city>>(json);
                         }
                     }
                 }
@@ -46,7 +61,7 @@ namespace Weather
         {
             InitializeComponent();
 
-            if (ParallelActions.cities.Count == 0)
+            if (StaticVariables.cities.Count == 0)
             {
                 InitData();
             }
@@ -65,10 +80,25 @@ namespace Weather
             var item = e.SelectedItem as MasterPageItem;
             if (item != null)
             {
+                //if (item.Title == "История")
+                //{
+                //    Detail = new NavigationPage(new HistoryPage());
+                //}
+                //else if (item.Title == "Выбор города")
+                //{
+                //    Detail = new NavigationPage(new AddCityPage());
+                //    masterPage.listView.SelectedItem = null;
+                //    IsPresented = false;
+                //}
+                //else
+                //{
+                //    Detail = new NavigationPage(new ContextPage());
+                //}
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
                 masterPage.listView.SelectedItem = null;
                 IsPresented = false;
             }
+            
         }
 
         private async void InitData()
