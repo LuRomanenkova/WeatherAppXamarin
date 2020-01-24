@@ -43,7 +43,10 @@ namespace Weather
                     windTxt.Text = $"{weatherInfo.wind.speed} m/s";
                     cloudinessTxt.Text = $"{weatherInfo.clouds.all}%";
 
-                    var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt + weatherInfo.timezone);
+                    //var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt + weatherInfo.timezone);
+                    var dt = new DateTime(1970, 1, 1).Add(TimeSpan.FromTicks(weatherInfo.dt * TimeSpan.TicksPerSecond)).ToLocalTime();
+
+
                     dateTxt.Text = dt.ToString("dddd, MMM dd").ToUpper();
 
                     GetForecast();

@@ -72,20 +72,6 @@ namespace Weather
 
         }
 
-         void OnGetWeatherButtonClicked(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(_cityEntry.Text))
-            {
-                SelectedCity = _cityEntry.Text;
-                //var weatherdata = await RestService.Get(GenerateRequestUri(Constants.OpenWeatherMapEndpoint));
-                //BindingContext = weatherdata;
-            }
-            else
-            {
-                SelectedCity = "Moscow";
-            }
-        }
-
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (string.IsNullOrEmpty(e.NewTextValue))
@@ -105,7 +91,11 @@ namespace Weather
             if (e.SelectedItem != null)
             {
                 SelectedCity = e.SelectedItem.ToString();
-            }    
+            }
+            else
+            {
+                SelectedCity = "Moscow";
+            }
         }
     }
 }
