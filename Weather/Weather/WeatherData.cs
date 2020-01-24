@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Essentials;
 
 namespace Weather
 {
@@ -15,6 +16,11 @@ namespace Weather
             public City city { get; set; }
         }
 
+        public class Favourite_city
+        {
+            public string name { get; set; }
+            public string country { get; set; }
+        } 
         public class City
         {
             public int id { get; set; }

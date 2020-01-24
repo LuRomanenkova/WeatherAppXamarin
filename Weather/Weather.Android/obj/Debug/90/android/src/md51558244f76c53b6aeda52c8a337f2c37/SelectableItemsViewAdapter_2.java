@@ -1,8 +1,8 @@
 package md51558244f76c53b6aeda52c8a337f2c37;
 
 
-public class SelectableItemsViewAdapter
-	extends md51558244f76c53b6aeda52c8a337f2c37.ItemsViewAdapter
+public class SelectableItemsViewAdapter_2
+	extends md51558244f76c53b6aeda52c8a337f2c37.StructuredItemsViewAdapter_2
 	implements
 		mono.android.IGCUserPeer
 {
@@ -13,15 +13,15 @@ public class SelectableItemsViewAdapter
 			"n_onBindViewHolder:(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V:GetOnBindViewHolder_Landroid_support_v7_widget_RecyclerView_ViewHolder_IHandler\n" +
 			"n_onViewRecycled:(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V:GetOnViewRecycled_Landroid_support_v7_widget_RecyclerView_ViewHolder_Handler\n" +
 			"";
-		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.SelectableItemsViewAdapter, Xamarin.Forms.Platform.Android", SelectableItemsViewAdapter.class, __md_methods);
+		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.SelectableItemsViewAdapter`2, Xamarin.Forms.Platform.Android", SelectableItemsViewAdapter_2.class, __md_methods);
 	}
 
 
-	public SelectableItemsViewAdapter ()
+	public SelectableItemsViewAdapter_2 ()
 	{
 		super ();
-		if (getClass () == SelectableItemsViewAdapter.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.SelectableItemsViewAdapter, Xamarin.Forms.Platform.Android", "", this, new java.lang.Object[] {  });
+		if (getClass () == SelectableItemsViewAdapter_2.class)
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.SelectableItemsViewAdapter`2, Xamarin.Forms.Platform.Android", "", this, new java.lang.Object[] {  });
 	}
 
 

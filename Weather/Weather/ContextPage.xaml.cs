@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static Weather.WeatherData;
@@ -14,14 +14,70 @@ namespace Weather
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ContextPage : ContentPage
     {
-      
+        private string Location { get; set; } = "";
+
         public ContextPage()
         {
             InitializeComponent();
-            GetWeatherInfo();
+            if (AddCityPage.SelectedCity != "")
+            {
+                  Location = AddCityPage.SelectedCity;
+                    GetWeatherInfo();
+            }
+            else
+            {
+                GetCoordinates();
+            }
+            
         }
 
-        private string Location = AddCityPage.SelectedCity;
+       
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+
+        private async void GetCoordinates()
+        {
+            try
+            {
+                var request = new GeolocationRequest(GeolocationAccuracy.Medium);
+                var location = await Geolocation.GetLocationAsync(request);
+
+                if (location != null)
+                {
+                    Latitude = location.Latitude;
+                    Longitude = location.Longitude;
+
+                    Location = await GetCity(location);
+
+                    GetWeatherInfo();
+                }
+                else
+                {
+                    Location = AddCityPage.SelectedCity; ;
+
+                    GetWeatherInfo();
+                }
+            }
+            catch( Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
+        }
+
+        private async Task<string> GetCity(Location location)
+        {
+            var places = await Geocoding.GetPlacemarksAsync(location);
+            var currentPlace = places?.FirstOrDefault();
+
+            if (currentPlace != null)
+            {
+                return $"{currentPlace.Locality}, {currentPlace.CountryName}";
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         private async void GetWeatherInfo()
         {

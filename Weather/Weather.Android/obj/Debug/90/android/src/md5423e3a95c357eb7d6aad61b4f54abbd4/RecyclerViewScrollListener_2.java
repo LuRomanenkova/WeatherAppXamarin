@@ -1,7 +1,7 @@
 package md5423e3a95c357eb7d6aad61b4f54abbd4;
 
 
-public class RecyclerViewScrollListener
+public class RecyclerViewScrollListener_2
 	extends android.support.v7.widget.RecyclerView.OnScrollListener
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class RecyclerViewScrollListener
 		__md_methods = 
 			"n_onScrolled:(Landroid/support/v7/widget/RecyclerView;II)V:GetOnScrolled_Landroid_support_v7_widget_RecyclerView_IIHandler\n" +
 			"";
-		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.CollectionView.RecyclerViewScrollListener, Xamarin.Forms.Platform.Android", RecyclerViewScrollListener.class, __md_methods);
+		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.CollectionView.RecyclerViewScrollListener`2, Xamarin.Forms.Platform.Android", RecyclerViewScrollListener_2.class, __md_methods);
 	}
 
 
-	public RecyclerViewScrollListener ()
+	public RecyclerViewScrollListener_2 ()
 	{
 		super ();
-		if (getClass () == RecyclerViewScrollListener.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.CollectionView.RecyclerViewScrollListener, Xamarin.Forms.Platform.Android", "", this, new java.lang.Object[] {  });
+		if (getClass () == RecyclerViewScrollListener_2.class)
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.CollectionView.RecyclerViewScrollListener`2, Xamarin.Forms.Platform.Android", "", this, new java.lang.Object[] {  });
 	}
 
 

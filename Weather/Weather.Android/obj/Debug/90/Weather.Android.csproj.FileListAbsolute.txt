@@ -227,7 +227,6 @@ C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Deb
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\bin\mono.android.jar
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\static.flag
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\buildid.txt
-C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md5423e3a95c357eb7d6aad61b4f54abbd4\RecyclerViewScrollListener.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ActionSheetRenderer.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ActivityIndicatorRenderer.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\AHorizontalScrollView.java
@@ -295,8 +294,6 @@ C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Deb
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\InnerGestureListener.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\InnerScaleListener.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ItemContentView.java
-C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ItemsViewAdapter.java
-C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ItemsViewRenderer.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\LabelRenderer.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ListViewAdapter.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ListViewRenderer.java
@@ -327,8 +324,6 @@ C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Deb
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ScrollViewContainer.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ScrollViewRenderer.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SearchBarRenderer.java
-C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SelectableItemsViewAdapter.java
-C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SelectableItemsViewRenderer.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SelectableViewHolder.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ShellContentFragment.java
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ShellFlyoutRecyclerAdapter.java
@@ -524,3 +519,21 @@ C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Deb
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\res\drawable\w50d.png
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\res\drawable\w50n.png
 C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\res\drawable\wind.png
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md5423e3a95c357eb7d6aad61b4f54abbd4\RecyclerViewScrollListener_2.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\CarouselSpacingItemDecoration.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\FormsAnimationDrawable.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\GenericGlobalLayoutListener.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\GroupableItemsViewAdapter_2.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\GroupableItemsViewRenderer_3.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\IndicatorViewRenderer.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ItemsViewAdapter_2.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ItemsViewRenderer_3.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ListViewRenderer_ListViewScrollDetector.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\RefreshViewRenderer.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ScrollLayoutManager.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SelectableItemsViewAdapter_2.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SelectableItemsViewRenderer_3.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\StructuredItemsViewAdapter_2.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\StructuredItemsViewRenderer_3.java
+C:\Users\LudmilaRomanenkova\source\repos\Weather\Weather\Weather.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SwipeViewRenderer.java
